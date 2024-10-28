@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html lang="'en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="veiwport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <h1>Todos List</h1>
+    <ul>
+      {% for todo in todos %}
+      <li>{{todo.description}} - {{todo.status}}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
