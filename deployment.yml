@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-todo-app
+  labels:
+    app: flask-todo-app
+spec:
+  # replicas: 2
+  selector:
+    matchLabels:
+      app: flask-todo-app
+  template:
+    metadata:
+      labels:
+        app: flask-todo-app
+    # spec:
+    #   containers:
+    #     - name: getting-started-pod2
+    #       image: amaa00/flask-app2:1.0
+    #       port:
+    #         - containerPort: 8000
